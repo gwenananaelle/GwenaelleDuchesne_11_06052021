@@ -1,0 +1,12 @@
+.rental-gallery {
+    box-sizing: border-box;
+    background: #F7F7F7;
+    width: calc(100vw - 200px);
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 25px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 60px;
+}

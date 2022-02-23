@@ -1,5 +1,4 @@
 import '../styles/banner.css';
-import bg from '../assets/bg-banner.jpg';
 
 function Banner() {
     return (
