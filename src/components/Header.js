@@ -1,10 +1,10 @@
-import logo from '../logo.svg';
+import Logo from '../assets/Logo.js';
 import '../styles/header.css';
 
 function Header() {
     return (
         <div className='kasa-header'>
-            <img src={logo} className="App-logo" alt="logo" />
+            <Logo color='#FF6060'/>
             <ul className='kasa-menu'>
             <li>
                 Accueil
