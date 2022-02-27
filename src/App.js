@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Banner />
+      <Banner text='Chez vous, partout et ailleurs'/>
       <Gallery />
       <Footer />
     </div>

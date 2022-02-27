@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from '../assets/Logo.js';
 import '../styles/header.css';
 
@@ -7,10 +8,10 @@ function Header() {
             <Logo color='#FF6060'/>
             <ul className='kasa-menu'>
             <li>
-                Accueil
+                <Link to="/">Accueil</Link>
             </li>
             <li>
-                À propos
+                <Link to="/about">À propos</Link>
             </li>
             </ul>
         </div>

@@ -1,9 +1,9 @@
 import '../styles/banner.css';
 
-function Banner() {
+function Banner({text}) {
     return (
         <div className='banner-box'>
-            <h1 className='banner-text'>Chez vous, partout et ailleurs</h1>
+            {text ? <h1 className='banner-text'>{text}</h1> : null}
         </div>
     )
 }

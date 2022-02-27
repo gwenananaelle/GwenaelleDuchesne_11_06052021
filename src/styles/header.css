@@ -28,9 +28,12 @@
     align-items: flex-end;
     justify-content: flex-end;
     text-align: right;
-    text-decoration-line: underline;
     color: #FF6060;
 }
 .kasa-menu li {
     margin-left: 57px;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #FF6060;
+  text-decoration: none;
 }
