@@ -37,3 +37,21 @@
     width: 9px;
     fill: #fff;
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .dropdown {
+        max-width: 1023px;
+    }
+    .dropdown-title {
+        font-size: 24px;
+        line-height: 142.6%;
+    }
+    .dropdown-content {
+        font-size: 24px;
+        line-height: 142.6%;
+    }
+    .dropdown-chevron {
+        width: 14.06px;
+        height: 23.86px;
+    }
+}
