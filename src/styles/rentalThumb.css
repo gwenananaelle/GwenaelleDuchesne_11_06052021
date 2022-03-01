@@ -1,13 +1,20 @@
 .rental-thumb {
-    height: 340px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), #FF6060;
-    border-radius: 10px;
     list-style-type: none;
-    display: flex;  
+}
+.rental-thumb a {
+    height: 340px;
+    background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+        ),
+        #ff6060;
+    border-radius: 10px;
+    display: flex;
     align-items: flex-end;
     justify-content: flex-start;
 }
-.rental-thumb p {
-    color: #FFF;
+.rental-thumb a p {
+    color: #fff;
     padding: 20px;
 }

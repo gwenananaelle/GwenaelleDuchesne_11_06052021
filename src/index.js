@@ -6,6 +6,7 @@ import App from './App'
 import About from './routes/about'
 import Error from './routes/error'
 import reportWebVitals from './reportWebVitals'
+import RentalPage from './routes/rentalPage'
 
 ReactDOM.render(
     <BrowserRouter>
@@ -13,6 +14,7 @@ ReactDOM.render(
             <Route path="*" element={<Error />} />
             <Route path="/" element={<App />} />
             <Route path="about" element={<About />} />
+            <Route path=":rentalId" element={<RentalPage />} />
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')

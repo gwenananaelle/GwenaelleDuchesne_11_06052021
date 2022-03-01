@@ -1,9 +1,12 @@
-import '../styles/rentalThumb.css';
+import { Link } from 'react-router-dom'
+import '../styles/rentalThumb.css'
 
-function RentalThumb({title}) {
+function RentalThumb({ title, id }) {
     return (
         <li className="rental-thumb">
-            <p>{title}</p>
+            <Link to={id}>
+                <p>{title}</p>
+            </Link>
         </li>
     )
 }
