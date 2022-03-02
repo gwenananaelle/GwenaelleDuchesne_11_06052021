@@ -1,14 +1,23 @@
 import { ReactComponent as Chevron } from '../assets/chevron.svg'
+import { useState } from 'react'
 import '../styles/dropdown.css'
 
 function Dropdown(props) {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <div className="dropdown">
             <div className="dropdown-title">
                 <p>{props.title}</p>{' '}
-                <Chevron className="dropdown-chevron open" />
+                <Chevron
+                    className="dropdown-chevron open"
+                    onClick={() =>
+                        isOpen ? setIsOpen(false) : setIsOpen(true)
+                    }
+                />
             </div>
-            <div className="dropdown-content">{props.content}</div>
+            {isOpen ? (
+                <div className="dropdown-content">{props.content}</div>
+            ) : null}
         </div>
     )
 }
