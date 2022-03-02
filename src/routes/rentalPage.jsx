@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer';
+import Carrousel from '../components/Carrousel'
 import Tag from '../components/Tag'
 import Dropdown from '../components/Dropdown';
 import { ReactComponent as Star } from '../assets/star.svg'
@@ -24,6 +25,7 @@ export default function RentalPage() {
     return (
         <main>
             < Header />
+            < Carrousel pictures={rental.pictures}/>
             <h1>{rental.title}</h1>
             <p>{rental.location}</p>
             {tags}
