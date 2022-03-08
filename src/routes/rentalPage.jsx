@@ -7,6 +7,7 @@ import { ReactComponent as Star } from '../assets/star.svg'
 import rentalList from '../datas/logements.json'
 import { useParams } from 'react-router-dom';
 import '../styles/rating.css'
+import '../styles/rental-page.css'
 
 export default function RentalPage() {
     let { rentalId } = useParams();
@@ -23,20 +24,24 @@ export default function RentalPage() {
                 )}
     </ul>
     return (
-        <main>
+        <div>
             < Header />
-            < Carrousel pictures={rental.pictures}/>
-            <h1>{rental.title}</h1>
-            <p>{rental.location}</p>
-            {tags}
-            <div>
-                <p>{rental.host.name}</p>
-                <img src={rental.host.picture} alt='portrait of the host'></img>
-                {rating}
-            </div>
-            <Dropdown key={'description'+rental.id} title='Description' content={rental.description} />
-            <Dropdown key={'equipments'+rental.id} title='Équipements' content={equipments} />
+            <main className='rental-page'>
+                < Carrousel pictures={rental.pictures}/>
+                <h1 className='rental-title'>{rental.title}</h1>
+                <p className='rental-location'>{rental.location}</p>
+                <div className='rental-tags'>{tags}</div>
+                <div className='rental-profile'>
+                    <div>{rating}</div>
+                    <div className='rental-profile-host'>
+                        <p className='rental-profile_name'>{rental.host.name}</p>
+                        <img src={rental.host.picture} alt='portrait of the host' className='rental-profile_pic'></img>
+                    </div>
+                </div>
+                <Dropdown key={'description'+rental.id} title='Description' content={rental.description} />
+                <Dropdown key={'equipments'+rental.id} title='Équipements' content={equipments}/>
+            </main>
             < Footer />
-        </main>
+        </div>
   );
 }

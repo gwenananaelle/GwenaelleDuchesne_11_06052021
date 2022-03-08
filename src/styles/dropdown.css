@@ -32,10 +32,17 @@
     line-height: 17px;
     color: #ff6060;
 }
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+}
 .dropdown-chevron {
     height: 15px;
     width: 9px;
     fill: #fff;
+}
+.dropdown-chevron.open {
+    transform: rotate(180deg);
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {

@@ -9,7 +9,9 @@ function Dropdown(props) {
             <div className="dropdown-title">
                 <p>{props.title}</p>{' '}
                 <Chevron
-                    className="dropdown-chevron open"
+                    className={
+                        isOpen ? 'dropdown-chevron open' : 'dropdown-chevron'
+                    }
                     onClick={() =>
                         isOpen ? setIsOpen(false) : setIsOpen(true)
                     }

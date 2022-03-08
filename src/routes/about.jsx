@@ -25,9 +25,8 @@ const aboutList = [
 export default function About() {
   return (
     <main>
-        < Header />
+        <Header />
         <Banner />
-        <Dropdown />
         {aboutList.map((element, index) =>
         <Dropdown key={element.title+index} title={element.title} content={element.content} />
         )}

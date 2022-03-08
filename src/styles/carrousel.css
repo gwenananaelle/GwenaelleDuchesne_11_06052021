@@ -13,8 +13,8 @@
 .carrousel-previous {
     transform: rotate(90deg);
     fill: #ffffff;
-    width: 11.67px;
-    height: 19.8px;
+    height: 11.67px;
+    width: 19.8px;
     position: absolute;
     left: 6px;
     top: calc(50% - 10px);
@@ -22,8 +22,8 @@
 .carrousel-next {
     transform: rotate(-90deg);
     fill: #ffffff;
-    width: 11.67px;
-    height: 19.8px;
+    height: 11.67px;
+    width: 19.8px;
     position: absolute;
     right: 6px;
     top: calc(50% - 10px);
