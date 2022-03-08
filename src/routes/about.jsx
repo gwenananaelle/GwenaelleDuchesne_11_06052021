@@ -2,6 +2,7 @@ import Header from '../components/Header'
 import Banner from'../components/Banner'
 import Footer from '../components/Footer';
 import Dropdown from '../components/Dropdown';
+import Bg from '../assets/bg-banner2.jpg';
 
 const aboutList = [
   {
@@ -26,7 +27,7 @@ export default function About() {
   return (
     <main>
         <Header />
-        <Banner />
+        <Banner image={Bg} />
         {aboutList.map((element, index) =>
         <Dropdown key={element.title+index} title={element.title} content={element.content} />
         )}
