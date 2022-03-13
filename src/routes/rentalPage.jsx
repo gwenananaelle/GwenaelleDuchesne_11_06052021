@@ -45,8 +45,10 @@ export default function RentalPage() {
                         </div>
                     </div>
                 </div>
-                <Dropdown key={'description'+rental.id} title='Description' content={rental.description} />
-                <Dropdown key={'equipments'+rental.id} title='Équipements' content={equipments}/>
+                <div className='rental-dropdowns'>
+                    <Dropdown key={'description'+rental.id} title='Description' content={rental.description} length='half'/>
+                    <Dropdown key={'equipments'+rental.id} title='Équipements' content={equipments} length='half'/>
+                </div>
             </main>
             < Footer />
         </div>

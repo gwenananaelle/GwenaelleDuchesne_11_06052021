@@ -5,7 +5,7 @@ import '../styles/dropdown.css'
 function Dropdown(props) {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className="dropdown">
+        <div className={`dropdown ${props.length}`}>
             <div className="dropdown-title">
                 <p>{props.title}</p>{' '}
                 <Chevron

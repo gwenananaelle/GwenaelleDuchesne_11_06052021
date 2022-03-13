@@ -49,10 +49,16 @@
     .dropdown {
         max-width: 1023px;
     }
-    .dropdown-title {
-        font-size: 24px;
-        line-height: 142.6%;
+    .dropdown.half {
+        width: 582px;
+        margin-left: 0;
+        margin-right: 0;
     }
+    .dropdown.half .dropdown-title,
+    .dropdown.half .dropdown-content {
+        font-size: 18px;
+    }
+    .dropdown-title,
     .dropdown-content {
         font-size: 24px;
         line-height: 142.6%;

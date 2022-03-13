@@ -68,4 +68,10 @@
     .rental-profile-host {
         order: -1;
     }
+    .rental-dropdowns {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 }
