@@ -18,3 +18,10 @@
     color: #fff;
     padding: 20px;
 }
+.rental-thumb a:link,
+.rental-thumb a:visited,
+.rental-thumb a:hover,
+.rental-thumb a:active {
+    color: #ff6060;
+    text-decoration: none;
+}

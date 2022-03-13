@@ -41,7 +41,7 @@
     color: #ff6060;
     text-decoration: none;
 }
-a.current {
+.kasa-header a.current {
     text-decoration: underline;
 }
 /* Medium devices (landscape tablets, 768px and up) */
