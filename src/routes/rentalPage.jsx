@@ -31,14 +31,18 @@ export default function RentalPage() {
             < Header />
             <main className='rental-page'>
                 < Carrousel pictures={rental.pictures}/>
-                <h1 className='rental-title'>{rental.title}</h1>
-                <p className='rental-location'>{rental.location}</p>
-                <div className='rental-tags'>{tags}</div>
-                <div className='rental-profile'>
-                    <div>{rating}</div>
-                    <div className='rental-profile-host'>
-                        <p className='rental-profile_name'>{rental.host.name}</p>
-                        <img src={rental.host.picture} alt='portrait of the host' className='rental-profile_pic'></img>
+                <div className='rental-box'>
+                    <div className='rental-info'>
+                        <h1 className='rental-title'>{rental.title}</h1>
+                        <p className='rental-location'>{rental.location}</p>
+                        <div className='rental-tags'>{tags}</div>
+                    </div>
+                    <div className='rental-profile'>
+                        <div>{rating}</div>
+                        <div className='rental-profile-host'>
+                            <p className='rental-profile_name'>{rental.host.name}</p>
+                            <img src={rental.host.picture} alt='portrait of the host' className='rental-profile_pic'></img>
+                        </div>
                     </div>
                 </div>
                 <Dropdown key={'description'+rental.id} title='Description' content={rental.description} />

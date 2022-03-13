@@ -54,4 +54,18 @@
     .rental-page {
         width: calc(100vw - 200px);
     }
+    .rental-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+    .rental-profile {
+        flex-direction: column;
+    }
+    .rental-profile-host {
+        order: -1;
+    }
 }
