@@ -17,7 +17,6 @@ ReactDOM.render(
             <Route path="rental" element={<RentalPage />}>
                 <Route path=":rentalId" element={<RentalPage />} />
             </Route>
-            {/* <Route path=":rentalId" element={<RentalPage />} /> */}
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')

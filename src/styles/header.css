@@ -34,10 +34,10 @@
 .kasa-menu li {
     margin-left: 10px;
 }
-a:link,
-a:visited,
-a:hover,
-a:active {
+.kasa-header a:link,
+.kasa-header a:visited,
+.kasa-header a:hover,
+.kasa-header a:active {
     color: #ff6060;
     text-decoration: none;
 }
