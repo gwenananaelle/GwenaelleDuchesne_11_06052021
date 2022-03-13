@@ -41,6 +41,9 @@ a:active {
     color: #ff6060;
     text-decoration: none;
 }
+a.current {
+    text-decoration: underline;
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .kasa-header {
