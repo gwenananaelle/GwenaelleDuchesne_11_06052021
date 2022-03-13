@@ -5,13 +5,16 @@ import Tag from '../components/Tag'
 import Dropdown from '../components/Dropdown';
 import { ReactComponent as Star } from '../assets/star.svg'
 import rentalList from '../datas/logements.json'
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import '../styles/rating.css'
 import '../styles/rental-page.css'
 
 export default function RentalPage() {
     let { rentalId } = useParams();
     const rental = rentalList.find(rental => rental.id === rentalId);
+    if (!rental) {
+        return(<Navigate to="/Error" replace={true} />)
+    }
     const tags = rental.tags.map( (tag, index) => 
         <Tag key={index+ tag} tag={tag} />)
     const range = [1,2,3,4,5]

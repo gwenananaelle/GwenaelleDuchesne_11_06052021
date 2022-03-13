@@ -14,7 +14,10 @@ ReactDOM.render(
             <Route path="*" element={<Error />} />
             <Route path="/" element={<App />} />
             <Route path="about" element={<About />} />
-            <Route path=":rentalId" element={<RentalPage />} />
+            <Route path="rental" element={<RentalPage />}>
+                <Route path=":rentalId" element={<RentalPage />} />
+            </Route>
+            {/* <Route path=":rentalId" element={<RentalPage />} /> */}
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')
