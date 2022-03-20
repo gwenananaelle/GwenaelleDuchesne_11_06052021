@@ -51,7 +51,8 @@
         max-width: 1023px;
     }
     .dropdown.half {
-        width: 582px;
+        max-width: 582px;
+        width: 49%;
         margin-left: 0;
         margin-right: 0;
     }
