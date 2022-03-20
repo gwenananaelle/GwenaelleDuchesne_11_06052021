@@ -29,7 +29,7 @@ export default function About() {
         <Header />
         <Banner image={Bg} />
         {aboutList.map((element, index) =>
-        <Dropdown key={element.title+index} title={element.title} content={element.content} />
+        <Dropdown key={element.title+index} title={element.title} content={element.content} length='full'/>
         )}
         < Footer />
     </main>
